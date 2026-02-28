@@ -1,2 +1,39 @@
-# customer-churn-analysis-python
-Customer churn analysis using Python (Pandas, Matplotlib) with business-driven insights and retention strategies.
+# 📊 Customer Churn Analysis (Python)
+Data-driven churn analysis project focused on identifying high-risk customer segments and improving retention strategies.
+## 📌 Project Objective
+The goal of this project is to analyze customer churn patterns, identify key churn drivers, and provide actionable business recommendations to reduce revenue loss.
+## 📂 Dataset
+The dataset includes:
+- Customer demographics
+- Contract details
+- Service usage
+- Payment methods
+- Pricing information
+- Churn indicators
+
+(Source: Telco Customer Churn Dataset – Kaggle)
+
+## 🛠 Tools Used
+- Python
+- Pandas
+- NumPy
+- Matplotlib
+- Seaborn
+
+## 📊 Key Insights
+- Overall churn rate: ~26%
+- Month-to-month customers show significantly higher churn (~43%)
+- Customers within first 12 months have highest churn (~48%)
+- Electronic check users have elevated churn risk
+- Customers without tech support churn nearly 3x more
+- Competitive offers and service dissatisfaction are major churn drivers
+
+## 🎯 Business Recommendations
+- Incentivize long-term contracts
+- Strengthen first-year onboarding
+- Promote automatic payment methods
+- Bundle technical support services
+- Improve service quality and competitive positioning
+
+## 📁 Files Included
+main.ipynb – Complete churn analysis notebook
