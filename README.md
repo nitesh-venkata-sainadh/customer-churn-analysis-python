@@ -13,6 +13,14 @@ The dataset includes:
 
 (Source: Telco Customer Churn Dataset – Kaggle)
 
+## Top 10 Churn reasons
+<img width="964" height="468" alt="image" src="https://github.com/user-attachments/assets/3cd1b971-ab06-4d2f-8a37-891f97ba4d1c" />
+
+## Churn Rate by Payment Method
+<img width="620" height="479" alt="image" src="https://github.com/user-attachments/assets/6f977b04-533c-473a-96f2-d134f3bf9c9f" />
+
+
+
 ## 🛠 Tools Used
 - Python
 - Pandas
