@@ -1,49 +1,153 @@
-# 📊 Customer Churn Analysis (Python)
-Customer churn is a key business challenge for subscription-based services. This project analyzes churn patterns in the Telco dataset to identify high-risk segments and provide actionable recommendations to improve customer retention.
-## 📌 Project Objective
-The goal of this project is to analyze customer churn patterns, identify key churn drivers, and provide actionable business recommendations to reduce revenue loss.
+# 📊 Customer Churn Prediction & Retention Analytics
+
+## 📌 Project Overview
+
+Customer churn is a critical challenge for subscription-based businesses. This project analyzes customer behavior patterns, identifies key churn drivers, and develops machine learning models to predict customers at risk of leaving.
+
+Using exploratory data analysis, business analytics, and predictive modeling techniques, the project provides actionable recommendations to improve customer retention and reduce revenue loss.
+
+---
+
+## 🎯 Business Objective
+
+The goal of this project is to:
+
+* Identify key factors influencing customer churn.
+* Predict customers likely to churn.
+* Evaluate machine learning models for churn prediction.
+* Provide actionable business recommendations to improve retention.
+
+---
+
 ## 📂 Dataset
-This analysis uses the Telco Customer Churn Dataset from Kaggle. The raw dataset is not included in this repository due to size and licensing. Refer to the original source to download the full dataset.
+
+The analysis uses the Telco Customer Churn Dataset containing over 7,000 customer records.
+
 The dataset includes:
-- Customer demographics
-- Contract details
-- Service usage
-- Payment methods
-- Pricing information
-- Churn indicators
 
-## Top 10 Churn reasons
-<img width="964" height="468" alt="image" src="https://github.com/user-attachments/assets/3cd1b971-ab06-4d2f-8a37-891f97ba4d1c" />
+* Customer demographics
+* Contract information
+* Service subscriptions
+* Billing and payment details
+* Customer lifetime value (CLTV)
+* Churn indicators
 
-## Churn Rate by Payment Method
-<img width="620" height="479" alt="image" src="https://github.com/user-attachments/assets/6f977b04-533c-473a-96f2-d134f3bf9c9f" />
-
-
+---
 
 ## 🛠 Tools Used
-- Python(Pandas, NumPy, Matplotlib, Seaborn)
-- Jupyter Notebook
 
-## 📊 Key Insights
-- Month-to-month contracts exhibit the highest churn rates.
-- Early-stage customers (first 12 months) are most likely to churn.
-- Higher monthly charges correlate with higher churn probability.
-- Lack of tech support increases churn risk significantly.
-- Electronic check users have elevated churn risk.
-- Competitive offers and service quality are common churn reasons.
+* Python
+* Pandas
+* NumPy
+* Matplotlib
+* Seaborn
+* Scikit-Learn
+* Jupyter Notebook
+
+---
+
+## 📊 Key Business Insights
+
+### Contract Type Impact
+
+| Contract Type  | Churn Rate |
+| -------------- | ---------- |
+| Month-to-Month | 42.7%      |
+| One Year       | 11.3%      |
+| Two Year       | 2.8%       |
+
+Customers on month-to-month contracts exhibit significantly higher churn risk.
+
+### Customer Tenure Impact
+
+| Tenure Group | Churn Rate |
+| ------------ | ---------- |
+| 0–12 Months  | 47.7%      |
+| 12–24 Months | 28.7%      |
+| 24–48 Months | 20.4%      |
+| 48–72 Months | 9.5%       |
+
+Customer churn decreases substantially as tenure increases.
+
+### Technical Support Impact
+
+Customers without technical support experienced a churn rate of 41.6%, compared to only 15.2% for customers receiving support.
+
+### Payment Method Risk
+
+Electronic check users showed the highest churn rate at 45.3%.
+
+---
+
+## 🤖 Machine Learning Results
+
+### Logistic Regression
+
+| Metric    | Value  |
+| --------- | ------ |
+| Accuracy  | 79.74% |
+| Precision | 63.69% |
+| Recall    | 55.35% |
+| F1 Score  | 59.23% |
+| ROC-AUC   | 84.22% |
+
+### Random Forest
+
+| Metric    | Value  |
+| --------- | ------ |
+| Accuracy  | 79.46% |
+| Precision | 64.21% |
+| Recall    | 51.34% |
+| F1 Score  | 57.06% |
+| ROC-AUC   | 84.46% |
+
+### Selected Model
+
+Logistic Regression was selected as the preferred model due to its stronger Recall and F1 Score, making it more effective at identifying customers at risk of churn.
+
+---
+
+## 📈 Top Predictors of Churn
+
+* Customer Tenure
+* Contract Type
+* Dependents
+* Fiber Optic Internet Service
+* Monthly Charges
+* Total Charges
+* Streaming TV
+* Multiple Lines
+
+---
 
 ## 🎯 Business Recommendations
-- Incentivize long-term contracts
-- Strengthen first-year onboarding
-- Promote automatic payment methods
-- Bundle technical support services
-- Improve service quality and competitive positioning
+
+* Encourage migration from month-to-month plans to long-term contracts.
+* Strengthen customer onboarding during the first year.
+* Expand technical support adoption.
+* Improve retention campaigns for high-risk customer segments.
+* Review pricing strategies for customers with higher monthly charges.
+
+---
 
 ## 📁 Files Included
-main.ipynb – Complete churn analysis notebook
 
-## 🚀 How to Run
+* 01_Churn_Analysis.ipynb
+* 02_Churn_Prediction_Model.ipynb
+* churn_cleaned.csv
 
-1. Clone the repository…
-2. Install dependencies…
-3. Open `main.ipynb` in Jupyter Notebook.
+---
+
+## 🚀 Outcomes
+
+This project demonstrates:
+
+* Data Cleaning
+* Exploratory Data Analysis
+* Customer Analytics
+* Machine Learning
+* Predictive Modeling
+* Customer Retention Strategy
+* Business Intelligence
+
+The project combines business analytics and machine learning to help organizations proactively identify at-risk customers and improve retention outcomes.
